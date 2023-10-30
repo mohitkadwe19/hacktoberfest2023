@@ -1,0 +1,52 @@
+body {
+  min-height: 350px;
+  height: 100vh;
+  position: relative;
+  background-color: #40e0d0;
+}
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+div::before,
+div::after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+@media (max-width: 400px) {
+  div:not(.no-scale) {
+    transform: scale(0.8);
+  }
+}
+#pin {
+  width: 18em;
+  height: 14em;
+  margin-left: -9em;
+  margin-top: -6em;
+  background: repeating-linear-gradient(160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, white 0.95em 1em) 1% 40%/24% 75%, linear-gradient(white, white) 7% 60%/0.2% 75%, linear-gradient(white, white) 13% 55%/0.2% 75%, linear-gradient(white, white) 19% 43%/0.2% 75%, linear-gradient(white, white) 24.8% 30%/0.2% 75%, linear-gradient(160deg, rgba(255,255,255,0) 17%, #afeeee 17% 82%, rgba(255,255,255,0) 82%) 3.25% 0/22.5% 100%, linear-gradient(160deg, rgba(255,255,255,0) 15%, white 15% 85%, rgba(255,255,255,0) 85%) 0 0/25% 100%, repeating-linear-gradient(-160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, #afeeee 0.95em 1em) 33.33% 48%/25% 79%, linear-gradient(#afeeee, #afeeee) 32% 35%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 38% 50%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 44% 60%/0.2% 75%, linear-gradient(-160deg, rgba(255,255,255,0) 18%, #8de7e7 18% 82%, rgba(255,255,255,0) 82%) 33.33% 0/25% 100%, linear-gradient(-160deg, rgba(255,255,255,0) 15%, #afeeee 15% 85%, rgba(255,255,255,0) 85%) 33.33% 0/25% 100%, repeating-linear-gradient(160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, white 0.95em 1em) 66.66% 48%/25% 79%, linear-gradient(white, white) 56% 60%/0.2% 75%, linear-gradient(white, white) 62% 50%/0.2% 75%, linear-gradient(white, white) 68% 40%/0.2% 75%, linear-gradient(white, white) 75% 30%/0.2% 75%, linear-gradient(160deg, rgba(255,255,255,0) 18%, #afeeee 18% 82%, rgba(255,255,255,0) 82%) 66.66% 0/25% 100%, linear-gradient(160deg, rgba(255,255,255,0) 15%, white 15% 85%, rgba(255,255,255,0) 85%) 66.66% 0/25% 100%, repeating-linear-gradient(-160deg, rgba(255,255,255,0), rgba(255,255,255,0) 0.95em, #afeeee 0.95em 1em) 99% 40%/24% 75%, linear-gradient(#afeeee, #afeeee) 81% 35%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 87% 50%/0.2% 75%, linear-gradient(#afeeee, #afeeee) 93% 60%/0.2% 75%, linear-gradient(-160deg, rgba(255,255,255,0) 17%, #8de7e7 17% 82%, rgba(255,255,255,0) 82%) 96.75% 0/22.5% 100%, linear-gradient(-160deg, rgba(255,255,255,0) 15%, #afeeee 15% 85%, rgba(255,255,255,0) 85%) 100% 0/25% 100%, linear-gradient(-10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 0 100%/25% 17%, linear-gradient(10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 33.33% 100%/25% 17%, linear-gradient(-10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 66.66% 100%/25% 17%, linear-gradient(10deg, rgba(64,224,208,0) 48.5%, #21ccbb 49%) 100% 100%/25% 17%;
+  background-repeat: no-repeat;
+}
+#pin::before {
+  width: 2em;
+  height: 2em;
+  left: 12%;
+  top: -1%;
+  background-color: #dc143c;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  box-shadow: 2.7em 15.6em 0 #4169e1;
+  transform: rotate(-45deg);
+}
+#pin::after {
+  width: 15em;
+  height: 11.5em;
+  left: 6%;
+  top: -22%;
+  border-top-left-radius: 10em 12em;
+  border-top-right-radius: 10em 12em;
+  border-left: 0.15em dashed transparent;
+  border-top: 0.15em dashed white;
+  border-right: 0.15em dashed white;
+}
