@@ -1,0 +1,28 @@
+.replay {
+  padding: 5px;
+}
+
+.message {
+  font-family: fantasy;
+  font-style: italic;
+  font-size: larger;
+}
+
+button {
+  display: block;
+  height: 30px;
+  min-width: 100px;
+  font-size: large;
+  font-family: fantasy;
+}
+
+input {
+  background-color: wheat;
+  font-family: cursive;
+  font-size: x-large;
+  color: red;
+}
+
+body {
+  background-color: wheat;
+}
